@@ -159,12 +159,7 @@ Global
 		SolutionGuid = {58F1E591-A278-498C-B794-50A16E2EE1FC}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{003b423f-4a9d-469c-ac5d-45621f45fcc8}*SharedItemsImports = 5
-		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{21a9850b-2576-426d-adce-1f7acb7cf8a0}*SharedItemsImports = 5
-		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{3ed39afc-ac43-4b91-ad2c-b9f9890ad8cb}*SharedItemsImports = 5
 		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
-		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{6a707734-5658-4c9b-a8c2-27fb878b5cbe}*SharedItemsImports = 5
-		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{dca63766-36c8-4305-a64c-66f02979d308}*SharedItemsImports = 5
 		UnoRepros\UnoRepros.Shared\UnoRepros.Shared.projitems*{fb075a8e-0219-4e9b-9050-44075c904799}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

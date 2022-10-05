@@ -1,14 +1,72 @@
 ﻿<Page
-    x:Class="UnoRepros.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UnoRepros"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"    
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	x:Class="UnoRepros.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:c="using:UnoMusicApp.Controls"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="using:UnoRepros"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Background="White"
+	mc:Ignorable="d">
 
-    <Grid>
-      <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-    </Grid>
+	<Grid>
+		<Grid.Resources>
+			<ResourceDictionary>
+				<Style TargetType="Button">
+					<Setter Property="FontFamily" Value="ms-appx:///Assets/Fonts/fa-solid-900.ttf#Font Awesome 6 Free Solid" />
+					<Setter Property="MinHeight" Value="50" />
+					<Setter Property="MinWidth" Value="50" />
+					<Setter Property="Foreground" Value="Black" />
+					<Setter Property="Background" Value="Transparent" />
+				</Style>
+			</ResourceDictionary>
+		</Grid.Resources>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="100" />
+		</Grid.RowDefinitions>
+
+		<Grid
+			Grid.Row="1"
+			Padding="0"
+			RowSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="48" />
+			</Grid.RowDefinitions>
+
+			<c:CircleImage
+				x:Name="cicleImg"
+				Margin="10"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				Source="https://play-lh.googleusercontent.com/v_O47JoRmAGXPOH-RBBJ80jXFcpGoL6lquXS19LMADFT1HQRYBtHZIaeqadXaWb25hRD" />
+
+			<c:CircleProgress
+				Margin="0"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				LineBackgroundColor="Black"
+				ProgressColor="Red"
+				StrokeWidth="2" />
+
+			<Button
+				Width="60"
+				Height="60"
+				Margin="0,15,0,0"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Background="#DE5154"
+				Command="{Binding ChangeTextCommand}"
+				Content="{Binding Text}"
+				CornerRadius="30">
+				<!--<Button.Content>
+					<TextBlock Foreground="Black" Text="{Binding PlayText}" />
+				</Button.Content>-->
+			</Button>
+
+		</Grid>
+	</Grid>
 </Page>
