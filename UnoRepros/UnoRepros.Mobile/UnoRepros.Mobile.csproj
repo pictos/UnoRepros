@@ -21,12 +21,12 @@
     <PackageReference Include="Uno.WinUI" Version="4.5.12" />
     <PackageReference Include="Uno.WinUI.RemoteControl" Version="4.5.12" Condition="'$(Configuration)'=='Debug'" />
     <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.5.12" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(TargetFramework)'=='net6.0-android'">
       <ItemGroup>
-        <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.4" />
+        <PackageReference Include="Xamarin.Google.Android.Material" Version="1.6.1.1" />
         <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.36" />
       </ItemGroup>
       <ItemGroup>
