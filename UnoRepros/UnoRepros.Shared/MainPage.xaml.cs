@@ -21,8 +21,10 @@ namespace UnoRepros;
 /// </summary>
 public sealed partial class MainPage : Page
 {
+	public string[] Items { get; } = new[] { "Hello", "there", "!" };
 	public MainPage()
 	{
 		this.InitializeComponent();
+		DataContext = this;
 	}
 }
