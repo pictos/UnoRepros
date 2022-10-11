@@ -55,6 +55,6 @@ public sealed partial class MainPage : Page
 			return;
 
 		Console.WriteLine("Started");
-		wasLongPress = true;
+		e.Handled = wasLongPress = true;
 	}
 }
